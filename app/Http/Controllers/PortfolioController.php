@@ -9,7 +9,6 @@ class PortfolioController extends Controller
 {
     public function index() {
         $projects = Project::all();
-		   // dd($projects); // Dump and die to see the output of $projects
 
         return view('portfolio.index', compact('projects'));
     }
